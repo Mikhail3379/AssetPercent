@@ -1,0 +1,259 @@
+.assetContainer {
+  top: 0;
+  padding: 0 3%;
+  margin: 0;
+  width: 100%;
+}
+.assetContainer .assetHeader {
+  margin: 7vh 0 10vh 0;
+}
+.assetContainer .assetHeader h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+.assetContainer .assetHeader .btnWalletConnected {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 7px 25px;
+  background: #202024;
+  font-size: 16px;
+  height: 2em;
+  width: 8em;
+  position: absolute;
+  right: 30px;
+}
+.assetContainer .assetWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.assetContainer .assetWrapper .assetList {
+  display: inline-block;
+  margin-top: 100px;
+  height: 450px;
+  border: 1px solid white;
+  border-radius: 2px;
+  width: 90%;
+}
+@media only screen and (min-width: 601px) {
+  .assetContainer .assetWrapper .assetList {
+    width: 25%;
+  }
+}
+.assetContainer .assetWrapper .assetList .circle {
+  background: #202024;
+  border-radius: 50%;
+  margin: -6em auto 0 auto;
+  width: 12em;
+  height: 12em;
+
+  border: 12px solid transparent;
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#202024, #202024),
+    linear-gradient(to right, gray 0%, green 0%);
+
+  background-position: center center;
+  background-origin: content-box, border-box, border-box, border-box, border-box;
+  background-clip: content-box, border-box, border-box, border-box, border-box;
+  transform: rotate(0deg);
+}
+.assetContainer .assetWrapper .assetList .circle .percent {
+  text-align: center;
+  height: 5.5em;
+  line-height: 5.5em;
+  color: white;
+  font-size: 2em;
+  margin: 0;
+}
+.assetContainer .assetWrapper .assetList .circle .btnMinus {
+  border-radius: 50%;
+  height: 1.8em;
+  width: 1.8em;
+  border: 1px solid #ffffff;
+  color: white;
+  background: #202024;
+  text-align: center;
+  margin: 0;
+  margin-top: 45%;
+  margin-left: 10%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.assetContainer .assetWrapper .assetList .circle .btnPlus {
+  border-radius: 50%;
+  height: 1.8em;
+  width: 1.8em;
+  border: 1px solid #ffffff;
+  color: white;
+  background: #202024;
+  text-align: center;
+  margin: 0;
+  margin-top: 45%;
+  margin-left: 70%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.assetContainer .assetWrapper .assetList h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+.assetContainer .assetWrapper .assetList .btnFinish {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 7px 25px;
+  color: black;
+  font-size: 16px;
+  height: 2em;
+  width: 16em;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 250px;
+}
+.assetContainer .assetWrapper .assetList .btnBTC {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 7px 25px;
+  color: white;
+  background: gray;
+  font-size: 16px;
+  height: 2em;
+  width: 16em;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+.assetContainer .assetWrapper .assetList .btnBTC img {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.assetContainer .assetWrapper .assetList .btnSolana {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 7px 25px;
+  color: black;
+  background: green;
+  font-size: 16px;
+  height: 2em;
+  width: 16em;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+.assetContainer .assetWrapper .assetList .btnSolana img {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.assetContainer .assetWrapper .assetList .takeProfit {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0;
+  color: white;
+  background: #202024;
+  font-size: 10px;
+  height: 7em;
+  width: 26em;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 150px;
+}
+.assetContainer .assetWrapper .assetList .takeProfit ul {
+  list-style: none;
+}
+.assetContainer .assetWrapper .assetList .takeProfit li::before {
+  color: #ffffff;
+}
+.assetContainer .assetWrapper main {
+  display: inline-block;
+  width: 75%;
+}
+@media only screen and (min-width: 601px) {
+  .assetContainer .assetWrapper main {
+    width: 72%;
+    margin-top: 6vh;
+  }
+}
+.assetContainer .assetWrapper main .stepsMenu {
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.assetContainer .assetWrapper main .stepsMenu .navigation {
+  display: flex;
+  list-style-type: none;
+  color: var(--gray_color);
+  font-size: 28px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  width: 15%;
+}
+.assetContainer .assetWrapper main .stepsMenu .pageNavigationContent {
+  list-style: decimal;
+  color: var(--gray_color);
+  font-size: 28px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 15%;
+}
+.assetContainer .assetWrapper main .stepsMenu .pageNavigationContent.active {
+  border-bottom: 2px solid white;
+  color: var(--text_color);
+}
+
+/* #section1 {
+  transform: rotate(0deg);
+}
+
+#section1 .item {
+  background-color: gray;
+  transform: rotate(180deg);
+}
+
+#section2 {
+  transform: rotate(180deg);
+}
+
+#section2 .item {
+  background-color: green;
+  transform: rotate(180deg);
+} */
+
+@media (max-width: 575px) {
+  .containerAsset .stepsMenu .navigation {
+    font-size: 21px;
+  }
+} /*# sourceMappingURL=AssetPercent.css.map */

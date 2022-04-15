@@ -1,0 +1,104 @@
+@import "./Screen.sass"
+
+.assetContainer
+    top: 0
+    padding: 0 3%
+    margin: 0
+    // width: calc( 100vw - 40px )
+    width: 100%
+    .assetHeader
+        margin: 7vh 0 8vh 0
+
+        h1
+            margin-bottom: 5px
+            font-size: 2.5em
+
+        .btnWalletConnected
+            border: 1px solid #ffffff
+            box-sizing: border-box
+            border-radius: 25px
+            padding: 7px 25px
+            color: black
+            font-size: 16px
+            background-color: #202024
+            height: 2em
+            width: 8em
+            position: absolute
+            right: 30px
+
+    .assetWrapper
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-evenly
+
+        .assetList
+            display: inline-block
+            margin-top: 80px
+            height: 450px
+            border: 1px solid white
+            border-radius: 2px
+
+            width: 90%
+
+            @media #{$medium-and-up}
+                width: 25%
+
+            .circle
+                background: #202024
+                border-radius: 50%
+                margin: -6em auto 0 auto
+                width: 12em
+                height: 12em
+                border: 8px solid gray
+
+                .percent
+                    text-align: center
+                    height: 3.5em
+                    line-height: 3.5em
+                    color: white
+                    font-size: 3em
+                    margin: 0
+
+            h2
+                margin-top: 20px
+                text-align: center
+
+        main
+            display: inline-block
+            margin-top: 6vh
+            width: 75%
+
+            @media #{$medium-and-up}
+                width: 70%
+                margin-top: 6vh
+            .stepsMenu
+                border-bottom: 1px solid white
+                margin-bottom: 20px
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                width: 75%
+                .navigation
+                    display: flex
+                    list-style-type: none
+                    color: var(--gray_color)
+                    font-size: 28px
+                    user-select: none
+                    margin: 0
+                    width: 15%
+
+                    &.active
+                        border-bottom: 2px solid white
+                        color: var(--text_color)
+            .pageNavigationContent
+                list-style: decimal
+                color: var(--gray_color)
+                font-size: 28px
+                user-select: none
+                width: 15%
+@media
+    .containerAsset .stepsMenu .navigation
+        font-size: 21px
+        width: 70%
+        margin-top: 6vh

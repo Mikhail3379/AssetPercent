@@ -1,0 +1,77 @@
+.AddAssetComponent .sort {
+  margin: 0 100px 25px 0;
+}
+.AddAssetComponent .search {
+  margin: 0 0 25px 0;
+}
+
+.AddAssetComponent .tableContainer {
+  overflow: none;
+  width: 100%;
+}
+
+.AddAssetComponent .assetsTable {
+  width: 100%;
+
+  border: solid 2px white;
+}
+
+.AddAssetComponent .assetsTable td,
+.AddAssetComponent .assetsTable th {
+  padding: 10px 5px 10px 20px;
+  border-left: solid 2px white;
+}
+
+.AddAssetComponent .assetsTable th {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  border-bottom: solid 2px white;
+}
+
+.AddAssetComponent .assetsTable .assetInfo {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.AddAssetComponent .assetsTable .assetLogo {
+  width: 35px;
+  /* margin-left: 25%; */
+  margin-right: 15px;
+}
+
+.AddAssetComponent .assetsTable .assetName {
+  color: white;
+  font-size: 15px;
+}
+
+.AddAssetComponent .assetsTable .assetTag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  height: 30px;
+}
+
+.AddAssetComponent .assetsTable .selectAsset {
+  background: transparent;
+  color: white;
+  border: solid 2px white;
+  border-radius: 25px;
+  width: 90px;
+  height: 30px;
+  line-height: 10px;
+  padding: 5px;
+  box-shadow: none !important;
+}
+
+.AddAssetComponent .assetsTable .selectAsset.selected {
+  background: #7efbc1;
+  border-color: #7efbc1;
+  color: #1f2022;
+}
+
+.AddAssetComponent .nextButton {
+  display: block;
+  margin: 30px auto;
+}
